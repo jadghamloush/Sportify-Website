@@ -2356,7 +2356,7 @@ def register_routes(app, db,bcrypt):
                         quantity=item.quantity,
                         price=product.price,
                         total_price=total_price,  # Populate total_price
-                        status='Paid'  # Assuming payment is done
+                        status='Shipped'  # Assuming payment is done
                     )
                     db.session.add(invoice)
 

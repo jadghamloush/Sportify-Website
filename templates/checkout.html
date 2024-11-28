@@ -71,6 +71,7 @@ block content %}
     <div class="payment-form mt-5">
       <h3>Payment Details</h3>
       <form method="POST" action="{{ url_for('checkout') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
         <div class="mb-3">
           <label for="cardholder_name" class="form-label"
             >Cardholder Name</label
